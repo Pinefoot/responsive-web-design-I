@@ -74,7 +74,8 @@ nav {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	font-family: inherit;
+    font-family: inherit;
+    width: 100%;
 	/*background-color: lightcyan;*/
 	
 	
@@ -261,6 +262,10 @@ a {
     }
     .logo{
         padding-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        margin-right: 50%;
+        margin-left: 50%;
     }
 
     .headImg {
@@ -273,6 +278,7 @@ a {
         display: flex;
         flex-direction: column-reverse;
         
+        
     }
 
     nav a{
@@ -284,6 +290,15 @@ a {
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 20px;
+
+    }
+
+    .logo{
+        padding-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0%;
+        margin-left: 0%;
     }
 
     .firsttwo {
@@ -370,7 +385,8 @@ nav a{
 /*First Image on page*/
 .serviceHeader {
 	display: flex;
-	justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 	
 
 }
@@ -515,16 +531,29 @@ li {
 
 
 
-/*media query attempt*/
+/*media query attempt for services page*/
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
 	.content {
 		display:flex;
 		flex-direction: column;
 		margin: 0%;
 		justify-content: center;
 		
-	}
+    }
+
+    .serviceHeader{
+            
+            padding-bottom: 3%;
+            display: flex;
+            justify-content: center;
+            margin-right: 0%;
+            margin-left: 0%;
+    }
+    
+    .services-header-img{
+        display: none;
+    }
 	
 	button {
 		display:flex;
