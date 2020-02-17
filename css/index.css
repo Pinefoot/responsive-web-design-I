@@ -245,112 +245,7 @@ a {
 }
 
 
-/*Media Queries for Index.html*/
 
-/*media 800px*/
-@media (max-width: 800px ){
-    nav{
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .headercontainer {
-        display: flex;
-        
-    }
-    .logo{
-        padding-bottom: 3%;
-        display: flex;
-        justify-content: center;
-        margin-right: 50%;
-        margin-left: 50%;
-    }
-
-    .headImg {
-        display: none;
-    }
-}
-/*Media 500px*/
-@media (max-width: 500px){
-    nav{
-        display: flex;
-        flex-direction: column-reverse;
-        
-        
-    }
-
-    nav a{
-        border-top: 1px grey solid;
-        border-bottom: 1px grey solid;
-        justify-content: center;
-        align-content: space-evenly;
-        width: 100%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        font-size: 20px;
-
-    }
-
-    .logo{
-        padding-bottom: 3%;
-        display: flex;
-        justify-content: center;
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-
-    .firsttwo {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .features{
-        padding-left: 2%;
-        padding-top: 4%;
-        width: 100%;
-    }
-
-    .about {
-        padding-left: 2%;
-        padding-top: 4%;
-        width: 100%;
-    }
-
-    .middle-img{
-        padding-left: 2%;
-        padding-top: 4%;
-        width: 100%;
-    }
-
-    .part2{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .services{
-        padding-left: 2%;
-        padding-top: 4%;
-        width: 100%;
-    }
-
-    .product{
-        padding-left: 2%;
-        padding-top: 4%;
-        width: 100%;
-        
-    }
-    
-    .vision {
-        padding-left: 2%;
-        padding-top: 4%;
-        width: 100%;
-        
-    }
-}
 
 
 
@@ -530,39 +425,198 @@ li {
 }
 
 
+/*Media Queries for Index.html*/
 
-/*media query attempt for services page*/
-
-@media (max-width: 800px){
-	.content {
-		display:flex;
-		flex-direction: column;
-		margin: 0%;
-		justify-content: center;
-		
+/*media 800px*/
+@media (max-width: 800px ){
+    nav{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    .serviceHeader{
-            
-            padding-bottom: 3%;
-            display: flex;
-            justify-content: center;
-            margin-right: 0%;
-            margin-left: 0%;
+    .headercontainer {
+        display: flex;
+        
     }
-    
-    .services-header-img{
+    .logo{
+        padding-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+
+    .headImg {
         display: none;
     }
-	
-	button {
-		display:flex;
-		flex-direction: column;
-		margin: 0%;
-		justify-content: center;
+
+/*services page at 800px*/
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .factaboutServ {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: flex-start;
+    }
+
+    .servPic {
+        display: none;
+        
+    }
+
+    .containerDDUI {
+		display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 1%
 	}
 	
-	.containerDDUI {
+	.containerDMWD{
+		display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+	}
+	
+	.containerIOSAD {
+		display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+	}
+	.digiDesign {
+		display:flex;
+		flex-direction: column;
+		width: 50%;
+        justify-content: center;
+        margin-right:2%;
+	}
+	.uxUI {
+		display:flex;
+		flex-direction: column;
+		width: 50%;
+		justify-content: center;
+	
+	}
+	.digiMark {
+		display:flex;
+		flex-direction: column;
+		width: 50%;
+        justify-content: center;
+        margin-right:2%;
+	}
+	.webDev {
+		display:flex;
+		flex-direction: column;
+		width: 50%;
+		justify-content: center;
+	}
+	.ios {
+		display:flex;
+		flex-direction: column;
+		width: 50%;
+        justify-content: center;
+        margin-right: 2%;
+	}
+	.androidDev {
+		display:flex;
+		flex-direction: column;
+		width: 50%;
+		justify-content: center;
+	}  
+}
+
+/*Media 500px*/
+@media (max-width: 500px){
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        
+        
+    }
+
+    nav a{
+        border-top: 1px grey solid;
+        border-bottom: 1px grey solid;
+        justify-content: center;
+        align-content: space-evenly;
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 20px;
+
+    }
+
+    .logo{
+        padding-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .firsttwo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .features{
+        padding-left: 2%;
+        padding-top: 4%;
+        width: 100%;
+    }
+
+    .about {
+        padding-left: 2%;
+        padding-top: 4%;
+        width: 100%;
+    }
+
+    .middle-img{
+        padding-left: 2%;
+        padding-top: 4%;
+        width: 100%;
+    }
+
+    .part2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services{
+        padding-left: 2%;
+        padding-top: 4%;
+        width: 100%;
+    }
+
+    .product{
+        padding-left: 2%;
+        padding-top: 4%;
+        width: 100%;
+        
+    }
+    
+    .vision {
+        padding-left: 2%;
+        padding-top: 4%;
+        width: 100%;
+        
+    }
+    /*services stuff*/
+    .containerDDUI {
 		display:flex;
 		flex-direction: column;
 		margin: 0%;
@@ -619,5 +673,106 @@ li {
 		margin: 0%;
 		justify-content: center;
 	}
+
+}
+
+
+
+
+/*media query attempt for services page*/
+
+@media (max-width: 800px){
+	.content {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		
+    }
+    
+    .logoimg{
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: center;
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+
+    .serviceHeader{
+            
+            padding-bottom: 3%;
+            display: flex;
+            justify-content: center;
+            margin-right: 0%;
+            margin-left: 0%;
+    }
+    
+    .services-header-img{
+        display: none;
+    }
+	
+	button {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	
+	/*.containerDDUI {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	
+	.containerDMWD{
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	
+	.containerIOSAD {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.digiDesign {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.uxUI {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	
+	}
+	.digiMark {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.webDev {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.ios {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.androidDev {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}*/
 }	
 
