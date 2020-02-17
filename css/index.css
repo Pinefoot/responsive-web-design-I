@@ -1,3 +1,498 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*nav and header styling*/
+header{
+	margin-left: 4px;
+}
+nav {
+	/*position: fixed;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 99%;
+	font-family: inherit;
+	/*background-color: lightcyan;*/
+	padding-left: 35px;
+	
+
+}
+
+nav a{
+	display: flex;
+	width:13%;
+	
+	text-align: center;
+	text-decoration: none;
+	color: gray;
+}
+
+
+/*Beginning of header styling, Texts and Images*/
+
+#headingsection { 
+	text-align: center;
+	padding: 5%;
+	width: 97%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.headercontainer {
+	width: 30%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	
+	
+
+}
+
+.innovation {
+	font-size: 90px;
+	display: flex;
+	
+	
+}
+
+.getStarted {
+	border: 2px solid black;
+	background-color: white;
+	color: grey;
+	padding: 2% 13%;
+	font-size: 16px;
+	text-decoration: none;
+	color: grey;
+	
+}
+
+
+
+.headImg {
+	
+	padding-left: 24%;
+}
+
+/*Main content area paragraphs and image*/
+
+#mainBody {
+	border-top: 2px grey solid;
+	border-bottom: 2px grey solid;
+	margin: 27px;
+	
+}
+
+.firsttwo {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.part2{
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.features {
+	width: 50%;
+	text-align:left;
+	padding-left: 6%;
+}
+
+.about{
+	width: 50%;
+	text-align:left;
+	padding: 2%;
+}
+
+.middle-img{
+	width: 97%;
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+	padding-left: 6%;
+	
+}
+
+.services{
+	width: 25%;
+	text-align:left;
+	
+}
+
+.product{
+	width:25%;
+	text-align:left;
+	
+}
+
+.vision {
+	width: 25%;
+	text-align: left;
+	
+}
+
+
+
+/*footer styles for all those things.*/
+
+
+
+.contact {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	
+	text-decoration: none;
+	padding-left: 8%; 
+}
+
+.phone{
+	padding-top: 10px;
+    
+}
+
+.email{
+	
+  	padding-top: 3%
+}
+
+.copyright{
+	text-align: center;
+	
+	
+	width: 94%;
+	
+}
+
+footer {
+	
+	padding-top: 2%;
+	font-family: 'Odibee Sans', cursive;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+/*NEW CSS FOR NEW PAGE OF SERVICES*/
+
+nav {
+	
+	justify-content: center;
+	align-items: center;
+	width: 99%;
+	font-family: inherit;
+	padding-left: 35px;
+	
+
+}
+
+nav a{
+	display: flex;
+	width:13%;
+	
+	text-align: center;
+	text-decoration: none;
+	color: gray;
+}
+
+
+/*First Image on page*/
+.serviceHeader {
+	display: flex;
+	justify-content: center;
+	
+
+}
+.services-header-img{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-top: 3%;
+	width: 87%
+}
+
+/*servicesP2 Section*/
+
+.services2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+    width: 95%;
+    padding-left: 86px;
+    padding-top: 10px;
+}
+
+/*second section class content*/
+
+.content {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 12px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 10px;
+    margin-left: 83px;
+    margin-right: 76px;
+}
+
+button {
+	display: flex;
+    justify-content: center;
+    margin-left: 90px;
+    margin-top: 17px;
+}
+
+.containerDDUI {
+	display: flex;
+	justify-content: space-evenly;
+	
+	align-items: center; 
+	
+}
+
+.containerDMWD{
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.containerIOSAD {
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	margin-top: 32px;
+	margin-bottom: 13px;
+}
+
+.digiDesign {
+	border: 2px solid black;
+    background-color: lightgrey;
+    width: 29%;
+    padding-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+	padding: 15px;
+	margin-right: 20%;
+}
+.uxUI {
+	border: 2px solid black;
+    background-color: lightgrey;
+    width: 29%;
+    padding-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 14px;
+
+}
+.digiMark {
+	border: 2px solid black;
+    background-color: lightgrey;
+    width: 29%;
+	padding: 14px;
+	margin-right: 20%;
+}
+.webDev {
+	border: 2px solid black;
+    background-color: lightgrey;
+    width: 29%;
+    padding: 15px;
+}
+.ios {
+	border: 2px solid black;
+    background-color: lightgrey;
+    width: 29%;
+	padding: 14px;
+	margin-right: 20%;
+}
+.androidDev {
+	border: 2px solid black;
+    background-color: lightgrey;
+    width: 29%;
+	padding: 14px;
+}
+
+/*FACTS SECTION*/
+
+.factaboutServ{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 94%;
+}
+
+.factsServ{
+	margin-right: 18%;
+    margin-left: 7%;
+    width: 39%;
+}
+
+li {
+	list-style-type: square;
+	margin: 16px;
+}
+
+/*Footer*/
+
+.footserv {
+	display: flex;
+    justify-content: center;
+}
+
+
+
+/*media query attempt*/
+
+@media (max-width: 1000px){
+	.content {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+		
+	}
+	
+	button {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	
+	.containerDDUI {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	
+	.containerDMWD{
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	
+	.containerIOSAD {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.digiDesign {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.uxUI {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	
+	}
+	.digiMark {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.webDev {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.ios {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+	.androidDev {
+		display:flex;
+		flex-direction: column;
+		margin: 0%;
+		justify-content: center;
+	}
+}	
 
