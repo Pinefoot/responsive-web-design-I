@@ -67,24 +67,24 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /*nav and header styling*/
 header{
-	margin-left: 4px;
+	
 }
 nav {
 	/*position: fixed;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 99%;
+	
 	font-family: inherit;
 	/*background-color: lightcyan;*/
-	padding-left: 35px;
+	
 	
 
 }
 
 nav a{
 	display: flex;
-	width:13%;
+	
 	
 	text-align: center;
 	text-decoration: none;
@@ -243,6 +243,47 @@ footer {
 a {
 	text-decoration: none;
 }
+
+
+/*Media Queries for Index.html*/
+
+/*media 800px*/
+@media (max-width: 800px ){
+    nav{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headercontainer {
+        display: flex;
+        
+    }
+    .logo{
+        padding-bottom: 3%;
+    }
+
+    .headImg {
+        display: none;
+    }
+}
+/*Media 500px*/
+@media (max-width: 500px){
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
 
 
 
